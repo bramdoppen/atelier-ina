@@ -1,73 +1,80 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        atelier-ina
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <Header>
+      <h1>Naailes, workshops en kleding op maat: <span>Ina Lubbers</span></h1>
+    </Header>
+    <ContentHolder>
+      <OverIna>
+        <h2>Over Ina</h2>
+        <p>
+          In het Achterhoekse Aalten geeft Ina Lubbers al jaren naailessen aan
+          mensen die graag zelf kleding maken.
+        </p>
+        <p>
+          Al tijdens haar jeugd altijd in de weer met lapjes, stofjes en garens
+          is haar hobby uitgegroeid tot een echte Modevakschool, sinds 1998. Met
+          veel enthousiasme en kennis van zaken maakt Ina van ieder lapje stof
+          iets moois.
+        </p>
+      </OverIna>
+    </ContentHolder>
+    <ContentHolder>
+      <ContentBlock>
+        <template #content>
+          <h2>Wekelijkse naailessen</h2>
+          <p>
+            Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse
+            Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde
+            en Aalten in.
+          </p>
+          <Button link="/naailessen">
+            Meer informatie
+          </Button>
+        </template>
+        <template #image>
+          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg">
+        </template>
+      </ContentBlock>
+    </ContentHolder>
+    <ContentHolder>
+      <ContentBlock :reversed="true">
+        <template #content>
+          <h2>Wekelijkse naailessen</h2>
+          <p>
+            Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse
+            Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde
+            en Aalten in.
+          </p>
+          <Button link="/naailessen">
+            Meer informatie
+          </Button>
+        </template>
+        <template #image>
+          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg">
+        </template>
+      </ContentBlock>
+    </ContentHolder>
+    <ContentHolder>
+      <ContentBlock>
+        <template #content>
+          <h2>Wekelijkse naailessen</h2>
+          <p>
+            Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse
+            Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde
+            en Aalten in.
+          </p>
+          <Button link="/naailessen">
+            Meer informatie
+          </Button>
+        </template>
+        <template #image>
+          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg">
+        </template>
+      </ContentBlock>
+    </ContentHolder>
   </div>
 </template>
 
 <script>
 export default {}
 </script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

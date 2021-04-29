@@ -1,21 +1,31 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class="site">
+    <Navigation />
+    <main>
+      <Nuxt />
+    </main>
+    <footer>
+      Kleding op maat - Ina Lubbers
+    </footer>
   </div>
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans+JP&display=swap");
+
+:root {
+  --font-sans: "Open Sans", ui-sans-serif, sans-serif;
+  --font-serif: "DM Serif Display", sans-serif;
+  --darkblue: #3921b1;
+  --lightblue: #accbfa;
+  --orange: #ee6538;
+  --pink: #f8aaee;
+}
+
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  font-size: 16px;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.66;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -29,6 +39,29 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.content-holder {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.27;
+}
+
+h2 {
+  font-size: 50px;
 }
 
 .button--green {
