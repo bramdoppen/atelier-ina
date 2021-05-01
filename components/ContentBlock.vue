@@ -18,27 +18,21 @@ export default {
       default: false
     }
   }
-}
+};
 </script>
 
 <style scoped>
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "content image";
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-auto-flow: row dense;
   gap: 80px;
   align-items: center;
 }
 
-.grid.reversed {
-  grid-template-areas: "image content";
-}
-
-@media (max-width: 48em) {
-  .grid,
-  .grid.reversed {
-    grid-template-columns: 1fr;
-    grid-template-areas: "image" " content";
+@media (min-width: 48em) {
+  .grid.reversed > *:first-child {
+    order: 1;
   }
 }
 
@@ -46,14 +40,12 @@ export default {
   display: grid;
   justify-items: start;
   gap: 20px;
-  grid-area: content;
 }
 
 picture {
   height: 500px;
   background: #f5f5f5;
   border-radius: 10px;
-  grid-area: image;
   overflow: hidden;
 }
 

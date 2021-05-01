@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Header>
-      <h1>Naailes, workshops en kleding op maat: <span>Ina Lubbers</span></h1>
+      <h1>Naailes, workshops en kleding op maat: <strong>Ina Lubbers</strong></h1>
     </Header>
     <ContentHolder>
       <OverIna>
@@ -39,13 +39,13 @@
     <ContentHolder>
       <ContentBlock :reversed="true">
         <template #content>
-          <h2>Wekelijkse naailessen</h2>
+          <h2>Kleding op maat</h2>
           <p>
             Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse
             Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde
             en Aalten in.
           </p>
-          <Button link="/naailessen">
+          <Button link="/kleding-op-maat">
             Meer informatie
           </Button>
         </template>
@@ -57,13 +57,13 @@
     <ContentHolder>
       <ContentBlock>
         <template #content>
-          <h2>Wekelijkse naailessen</h2>
+          <h2>Workshops</h2>
           <p>
             Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse
             Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde
             en Aalten in.
           </p>
-          <Button link="/naailessen">
+          <Button link="/workshops">
             Meer informatie
           </Button>
         </template>
@@ -76,5 +76,5 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>

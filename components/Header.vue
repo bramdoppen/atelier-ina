@@ -1,7 +1,7 @@
 <template>
   <header class="container" :class="{ small: small }">
     <div class="content-holder">
-      <div class="grid">
+      <div ref="grid" class="grid">
         <slot></slot>
       </div>
     </div>
@@ -9,6 +9,8 @@
 </template>
 
 <script>
+// import { gsap } from 'gsap'
+
 export default {
   props: {
     small: {
@@ -16,8 +18,25 @@ export default {
       required: false,
       default: false
     }
+  },
+  methods: {
+    wrapWords (str, tmpl) {
+      return str.replace(/\w+/g, tmpl || "<span>$&</span>");
+    },
+    animateHeaderText () {
+      console.log(this.$refs.grid);
+      const headerText = this.$refs.grid.querySelector("h1").textContent;
+      // const split = new this.$splitText(this.$refs.grid.querySelector("h1"));
+      // console.log(split);
+      console.log(this.wrapWords("Hallo dit is bram"));
+      console.log(this.wrapWords(headerText));
+      // gsap.fromTo(this.$refs.grid.children(), { y: 10, opacity: 0 }, { y: 0, opacity: 1, ease: 'expo.out' })
+    }
+  },
+  mounted () {
+    this.animateHeaderText();
   }
-}
+};
 </script>
 
 <style scoped>
@@ -42,6 +61,10 @@ export default {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 80px;
+
+  & > * {
+    opacity: 0;
+  }
 }
 
 h1 {
@@ -50,7 +73,7 @@ h1 {
   color: var(--darkblue);
 }
 
-span {
+span.tint {
   color: var(--lightblue);
 }
 </style>
