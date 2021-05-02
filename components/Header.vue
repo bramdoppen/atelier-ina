@@ -9,7 +9,7 @@
 </template>
 
 <script>
-// import { gsap } from 'gsap'
+import { gsap } from 'gsap';
 
 export default {
   props: {
@@ -20,17 +20,9 @@ export default {
     }
   },
   methods: {
-    wrapWords (str, tmpl) {
-      return str.replace(/\w+/g, tmpl || "<span>$&</span>");
-    },
     animateHeaderText () {
-      console.log(this.$refs.grid);
-      const headerText = this.$refs.grid.querySelector("h1").textContent;
-      // const split = new this.$splitText(this.$refs.grid.querySelector("h1"));
-      // console.log(split);
-      console.log(this.wrapWords("Hallo dit is bram"));
-      console.log(this.wrapWords(headerText));
-      // gsap.fromTo(this.$refs.grid.children(), { y: 10, opacity: 0 }, { y: 0, opacity: 1, ease: 'expo.out' })
+      const headerText = this.$refs.grid.querySelector("h1");
+      gsap.fromTo(headerText, { y: "100%", opacity: 0 }, { y: "0%", opacity: 1, duration: 1, ease: 'circ.inOut' });
     }
   },
   mounted () {
@@ -61,10 +53,11 @@ export default {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 80px;
+  overflow: hidden;
+}
 
-  & > * {
-    opacity: 0;
-  }
+.grid > * {
+  opacity: 0;
 }
 
 h1 {

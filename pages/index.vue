@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Header>
-      <h1>Naailes, workshops en kleding op maat: <strong>Ina Lubbers</strong></h1>
+      <h1>Naailes, workshops en kleding op maat: <span class="tint">Ina Lubbers</span></h1>
     </Header>
     <ContentHolder>
       <OverIna>

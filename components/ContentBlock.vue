@@ -1,6 +1,6 @@
 <template>
   <article class="grid" :class="{ reversed: reversed }">
-    <div class="content">
+    <div class="content spacing-sm">
       <slot name="content" />
     </div>
     <picture>
@@ -34,12 +34,6 @@ export default {
   .grid.reversed > *:first-child {
     order: 1;
   }
-}
-
-.content {
-  display: grid;
-  justify-items: start;
-  gap: 20px;
 }
 
 picture {
