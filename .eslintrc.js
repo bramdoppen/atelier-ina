@@ -16,6 +16,8 @@ module.exports = {
   // add your custom rules here
   rules: {
     "semi": ["error", "always"],
-    "quotes": "off"
+    "quotes": "off",
+    "declaration-empty-line-before": "off",
+    "space-before-function-paren": "off"
   }
 }

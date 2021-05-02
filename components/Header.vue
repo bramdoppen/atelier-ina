@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
 
 export default {
   props: {
@@ -20,12 +20,16 @@ export default {
     }
   },
   methods: {
-    animateHeaderText () {
+    animateHeaderText() {
       const headerText = this.$refs.grid.querySelector("h1");
-      gsap.fromTo(headerText, { y: "100%", opacity: 0 }, { y: "0%", opacity: 1, duration: 1, ease: 'circ.inOut' });
+      gsap.fromTo(
+        headerText,
+        { y: "100%", opacity: 0 },
+        { y: "0%", opacity: 1, duration: 1, ease: "circ.inOut" }
+      );
     }
   },
-  mounted () {
+  mounted() {
     this.animateHeaderText();
   }
 };
@@ -33,14 +37,23 @@ export default {
 
 <style scoped>
 .container {
-  width: 100%;
-  padding-top: 160px;
-  padding-bottom: 160px;
-}
+  --container-spacing: 160px;
 
-.container.small {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  width: 100%;
+  padding-top: var(--container-spacing);
+  padding-bottom: var(--container-spacing);
+
+  @media (--max48) {
+    --container-spacing: 40px;
+  }
+
+  &.small {
+    --container-spacing: 80px;
+
+    @media (--max48) {
+      --container-spacing: 20px;
+    }
+  }
 }
 
 .content-holder {
@@ -50,10 +63,12 @@ export default {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 80px;
-  overflow: hidden;
+  @media (--min48) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 80px;
+    overflow: hidden;
+  }
 }
 
 .grid > * {
@@ -61,9 +76,16 @@ export default {
 }
 
 h1 {
-  grid-column: 2 / span 6;
   font-size: 73px;
   color: var(--darkblue);
+
+  @media (--min48) {
+    grid-column: 2 / span 6;
+  }
+
+  @media (--max48) {
+    font-size: 30px;
+  }
 }
 
 span.tint {

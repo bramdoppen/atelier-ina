@@ -11,7 +11,9 @@
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans+JP&display=swap");
+
+@custom-media --max48 (max-width: 48em);
+@custom-media --min48 (min-width: 48em);
 
 :root {
   --font-sans: "Open Sans", ui-sans-serif, sans-serif;

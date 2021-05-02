@@ -4,9 +4,6 @@
       <NuxtLink to="/" class="logo">
         Kleding op maat - Ina Lubbers
       </NuxtLink>
-      <div class="mobile-nav-button">
-        <button @click="navOpen = !navOpen" class="navbtn">Open nav</button>
-      </div>
       <nav :class="{ 's-nav-open': navOpen }">
         <ul>
           <li>
@@ -43,6 +40,22 @@
           </li>
         </ul>
       </nav>
+      <div class="mobile-nav-button">
+        <button
+          @click="navOpen = !navOpen"
+          :class="{ 's-open': navOpen }"
+          class="navbtn"
+        >
+          <svg v-show="!navOpen" class="l-icon">
+            <use href="~/assets/icons.svg#icon-menu"></use>
+          </svg>
+          <span v-show="!navOpen">Menu</span>
+          <svg v-show="navOpen" class="l-icon">
+            <use href="~/assets/icons.svg#icon-close"></use>
+          </svg>
+          <span v-show="navOpen">Sluiten</span>
+        </button>
+      </div>
     </header>
   </ContentHolder>
 </template>
@@ -53,6 +66,11 @@ export default {
     return {
       navOpen: false
     };
+  },
+  watch: {
+    $route () {
+      this.navOpen = false;
+    }
   }
 };
 </script>
@@ -62,6 +80,10 @@ export default {
   position: sticky;
   top: 0;
   z-index: 1;
+
+  @media (min-width: 48em) {
+    margin-top: 60px;
+  }
 }
 
 .header-bar {
@@ -81,6 +103,7 @@ nav {
 .logo,
 nav > ul > li > a {
   display: flex;
+  align-items: center;
   padding: 20px 30px;
   font-family: var(--font-serif);
   font-weight: 400;
@@ -94,12 +117,25 @@ nav > ul {
   list-style: none;
 }
 
-nav > ul > li > a {
+.nav-link {
   color: var(--darkblue);
-}
 
-nav > ul > li > a:hover {
-  color: var(--pink);
+  &:hover,
+  &.nuxt-link-active {
+    color: var(--pink);
+  }
+
+  @media (--min48) {
+    & .l-icon {
+      display: none;
+    }
+  }
+
+  @media (--max48) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
 }
 
 .navbtn {
@@ -108,16 +144,15 @@ nav > ul > li > a:hover {
   background: transparent;
   width: 80px;
   height: 100%;
-  border-left: 1px solid gray;
-}
+  font-size: 12px;
+  border-left: 1px solid #eee;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  padding: 10px;
 
-.l-icon {
-  display: none;
-}
-
-@media (min-width: 48em) {
-  .header-container {
-    margin-top: 60px;
+  @media (--min48) {
+    display: none;
   }
 }
 
@@ -130,7 +165,7 @@ nav > ul > li > a:hover {
 
   .logo,
   nav > ul > li > a {
-    padding: 5px 30px;
+    padding: 5px var(--spacing);
   }
 
   .logo {
@@ -154,12 +189,6 @@ nav > ul > li > a:hover {
   nav > ul {
     flex-direction: column;
     padding: 0;
-  }
-
-  .nav-link {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
   }
 
   .l-icon {
