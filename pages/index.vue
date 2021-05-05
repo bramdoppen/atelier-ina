@@ -48,9 +48,7 @@
         <template #content>
           <h2>Kleding op maat</h2>
           <p>
-            Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse
-            Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde
-            en Aalten in.
+            Een uniek kledingstuk voor een feestelijke gelegenheid, of omdat het lastig is om kleding te vinden in jouw eigen maat? Ik maak graag een passend kledingstuk voor jou!
           </p>
           <Button link="/kleding-op-maat">
             Meer informatie
@@ -66,9 +64,7 @@
         <template #content>
           <h2>Workshops</h2>
           <p>
-            Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse
-            Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde
-            en Aalten in.
+            Zoek je een inspirerende workshop of een gastles? Dan ben je bij Ina aan het juiste adres.
           </p>
           <Button link="/workshops">
             Meer informatie
