@@ -1,7 +1,7 @@
 <template>
   <header class="container" :class="{ small: small }">
     <div class="content-holder">
-      <div class="grid">
+      <div ref="grid" class="grid">
         <slot></slot>
       </div>
     </div>
@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+
 export default {
   props: {
     small: {
@@ -16,20 +18,38 @@ export default {
       required: false,
       default: false
     }
+  },
+  methods: {
+    animateHeaderText() {
+      const headerText = this.$refs.grid.querySelector("h1");
+      gsap.fromTo(
+        headerText,
+        { y: "100%", opacity: 0 },
+        { y: "0%", opacity: 1, duration: 1, ease: "circ.inOut" }
+      );
+    }
+  },
+  mounted() {
+    this.animateHeaderText();
   }
-}
+};
 </script>
 
 <style scoped>
 .container {
-  width: 100%;
-  padding-top: 160px;
-  padding-bottom: 160px;
-}
+  --space: calc(var(--container-spacing) * 2);
 
-.container.small {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  width: 100%;
+  padding-top: var(--space);
+  padding-bottom: var(--space);
+
+  @media (--max48) {
+    --space: var(--container-spacing);
+  }
+
+  &.small {
+    --space: var(--container-spacing);
+  }
 }
 
 .content-holder {
@@ -39,18 +59,27 @@ export default {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 80px;
+  @media (--min48) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: var(--container-spacing);
+    overflow: hidden;
+  }
+}
+
+.grid > * {
+  opacity: 0;
 }
 
 h1 {
-  grid-column: 2 / span 6;
-  font-size: 73px;
   color: var(--darkblue);
+
+  @media (--min48) {
+    grid-column: 2 / span 6;
+  }
 }
 
-span {
+span.tint {
   color: var(--lightblue);
 }
 </style>

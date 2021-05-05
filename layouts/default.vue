@@ -4,14 +4,14 @@
     <main>
       <Nuxt />
     </main>
-    <footer>
-      Kleding op maat - Ina Lubbers
-    </footer>
+    <Footer/>
   </div>
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans+JP&display=swap");
+
+@custom-media --max48 (max-width: 48em);
+@custom-media --min48 (min-width: 48em);
 
 :root {
   --font-sans: "Open Sans", ui-sans-serif, sans-serif;
@@ -20,6 +20,29 @@
   --lightblue: #accbfa;
   --orange: #ee6538;
   --pink: #f8aaee;
+  --container-spacing: 80px;
+  --title-base: 40px;
+
+  @media (--max48) {
+    --container-spacing: 70px;
+    --title-base: 22px;
+  }
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("~/assets/fonts/DMSerifDisplay-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("~/assets/fonts/NotoSans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -32,6 +55,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+
+  @media (--max48) {
+    font-size: 16px;
+  }
 }
 
 *,
@@ -56,12 +83,43 @@ h2,
 h3,
 h4 {
   font-family: var(--font-serif);
+  color: var(--darkblue);
   font-weight: 400;
   line-height: 1.27;
 }
 
+h1 {
+  font-size: calc(var(--title-base) * 1.825);
+}
+
 h2 {
-  font-size: 50px;
+  font-size: calc(var(--title-base) * 1.3);
+}
+
+.color-black {
+  color: #000;
+}
+
+.spacing-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.spacing-sm > * {
+  margin: 0;
+}
+
+.spacing-sm > * + * {
+  margin-top: 20px;
+}
+
+.spacing-sm > h2 + * {
+  margin-top: 15px;
+}
+
+.spacing-sm > * + .btn {
+  margin-top: 30px;
 }
 
 .button--green {
@@ -91,5 +149,9 @@ h2 {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.l-icon {
+  fill: currentColor;
 }
 </style>

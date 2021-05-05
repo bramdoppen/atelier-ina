@@ -18,6 +18,12 @@
 }
 
 .container + .container {
-  margin-top: 80px;
+  margin-top: var(--container-spacing);
+}
+
+@media (--max48) {
+  header.container + .container {
+    margin-top: 0;
+  }
 }
 </style>
