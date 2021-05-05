@@ -22,6 +22,7 @@ export default {};
   grid-template-rows: auto 1fr;
   grid-template-columns: repeat(8, 1fr);
   gap: 80px;
+  margin-bottom: 120px;
 }
 
 .image-holder {

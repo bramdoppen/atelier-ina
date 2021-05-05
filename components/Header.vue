@@ -37,22 +37,18 @@ export default {
 
 <style scoped>
 .container {
-  --container-spacing: 160px;
+  --space: calc(var(--container-spacing) * 2);
 
   width: 100%;
-  padding-top: var(--container-spacing);
-  padding-bottom: var(--container-spacing);
+  padding-top: var(--space);
+  padding-bottom: var(--space);
 
   @media (--max48) {
-    --container-spacing: 40px;
+    --space: var(--container-spacing);
   }
 
   &.small {
-    --container-spacing: 80px;
-
-    @media (--max48) {
-      --container-spacing: 20px;
-    }
+    --space: var(--container-spacing);
   }
 }
 
@@ -66,7 +62,7 @@ export default {
   @media (--min48) {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 80px;
+    gap: var(--container-spacing);
     overflow: hidden;
   }
 }
@@ -76,15 +72,10 @@ export default {
 }
 
 h1 {
-  font-size: 73px;
   color: var(--darkblue);
 
   @media (--min48) {
     grid-column: 2 / span 6;
-  }
-
-  @media (--max48) {
-    font-size: 30px;
   }
 }
 

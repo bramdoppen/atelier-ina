@@ -1,25 +1,32 @@
 <template>
   <div class="container">
     <Header>
-      <h1>Naailes, workshops en kleding op maat: <span class="tint">Ina Lubbers</span></h1>
+      <h1>
+        Naailes, workshops en kleding op maat:
+        <span class="tint">Ina Lubbers</span>
+      </h1>
     </Header>
     <ContentHolder>
       <OverIna>
-        <h2>Over Ina</h2>
+        <h2 class="color-black">Over Ina Lubbers</h2>
         <p>
           In het Achterhoekse Aalten geeft Ina Lubbers al jaren naailessen aan
-          mensen die graag zelf kleding maken.
+          mensen die graag zelf kleding willen maken.
         </p>
         <p>
-          Al tijdens haar jeugd altijd in de weer met lapjes, stofjes en garens
+          Al tijdens haar jeugd altijd in de weer met lapjes, stoffen en garens
           is haar hobby uitgegroeid tot een echte Modevakschool, sinds 1998. Met
           veel enthousiasme en kennis van zaken maakt Ina van ieder lapje stof
           iets moois.
         </p>
+        <p>
+          Door middel van verschillende cursussen en bijscholingen breidt ze
+          haar kennis steeds verder uit.
+        </p>
       </OverIna>
     </ContentHolder>
     <ContentHolder>
-      <ContentBlock>
+      <ContentBlock :reversed="true">
         <template #content>
           <h2>Wekelijkse naailessen</h2>
           <p>
@@ -32,12 +39,12 @@
           </Button>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg">
+          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>
     <ContentHolder>
-      <ContentBlock :reversed="true">
+      <ContentBlock>
         <template #content>
           <h2>Kleding op maat</h2>
           <p>
@@ -50,12 +57,12 @@
           </Button>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg">
+          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>
     <ContentHolder>
-      <ContentBlock>
+      <ContentBlock :reversed="true">
         <template #content>
           <h2>Workshops</h2>
           <p>
@@ -68,7 +75,7 @@
           </Button>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg">
+          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>

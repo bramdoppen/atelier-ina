@@ -94,6 +94,10 @@ export default {
   background: #fff;
   display: grid;
   grid-template-columns: 1fr auto;
+
+  @media (--max48) {
+    border: 1px solid #eee;
+  }
 }
 
 nav {
@@ -104,17 +108,26 @@ nav {
 nav > ul > li > a {
   display: flex;
   align-items: center;
-  padding: 20px 30px;
   font-family: var(--font-serif);
   font-weight: 400;
   color: #000;
   text-decoration: none;
   font-size: 20px;
+  padding: 10px var(--spacing);
+
+  @media (--min48) {
+    padding: 20px 30px;
+  }
 }
 
 nav > ul {
   display: flex;
   list-style: none;
+
+  @media (--max48) {
+    padding: 20px 0 0 0;
+    flex-direction: column;
+  }
 }
 
 .nav-link {
@@ -135,6 +148,8 @@ nav > ul {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    font-size: 22px;
+    padding: 15px var(--spacing);
   }
 }
 
@@ -142,14 +157,15 @@ nav > ul {
   appearance: none;
   border: 0;
   background: transparent;
-  width: 80px;
+  width: 60px;
   height: 100%;
   font-size: 12px;
+  font-family: var(--font-serif);
   border-left: 1px solid #eee;
   display: grid;
   grid-template-rows: 1fr auto;
   justify-items: center;
-  padding: 10px;
+  padding: 12px;
 
   @media (--min48) {
     display: none;
@@ -161,11 +177,6 @@ nav > ul {
     --spacing: 20px;
 
     height: 60px;
-  }
-
-  .logo,
-  nav > ul > li > a {
-    padding: 5px var(--spacing);
   }
 
   .logo {
@@ -184,11 +195,6 @@ nav > ul {
 
   nav.s-nav-open {
     display: block;
-  }
-
-  nav > ul {
-    flex-direction: column;
-    padding: 0;
   }
 
   .l-icon {

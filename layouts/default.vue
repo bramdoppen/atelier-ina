@@ -4,9 +4,7 @@
     <main>
       <Nuxt />
     </main>
-    <footer>
-      Kleding op maat - Ina Lubbers
-    </footer>
+    <Footer/>
   </div>
 </template>
 
@@ -22,6 +20,13 @@
   --lightblue: #accbfa;
   --orange: #ee6538;
   --pink: #f8aaee;
+  --container-spacing: 80px;
+  --title-base: 40px;
+
+  @media (--max48) {
+    --container-spacing: 70px;
+    --title-base: 22px;
+  }
 }
 
 @font-face {
@@ -50,6 +55,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+
+  @media (--max48) {
+    font-size: 16px;
+  }
 }
 
 *,
@@ -79,8 +88,12 @@ h4 {
   line-height: 1.27;
 }
 
+h1 {
+  font-size: calc(var(--title-base) * 1.825);
+}
+
 h2 {
-  font-size: 50px;
+  font-size: calc(var(--title-base) * 1.3);
 }
 
 .color-black {
