@@ -17,7 +17,7 @@
           </p>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
+          <img src="~assets/images/compressed/pexels_cottonbro_373_Equin.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>

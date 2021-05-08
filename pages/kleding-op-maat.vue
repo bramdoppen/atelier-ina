@@ -18,7 +18,7 @@
           </p>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
+          <img src="~assets/images/compressed/bijgesneden_ina.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>
@@ -51,9 +51,6 @@
             Wanneer alles naar tevredenheid is en het kledingstuk goed zit,
             wordt het kledingstuk afgemaakt.
           </p>
-        </template>
-        <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
         </template>
       </Stappenplan>
     </ContentHolder>
