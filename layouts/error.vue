@@ -26,6 +26,9 @@
 <script>
 export default {
   props: ['error'],
-  layout: 'error'
+  layout: 'error',
+  head: {
+    title: "Pagina niet gevonden - Kleding op maat - Ina Lubbers Lensink"
+  }
 };
 </script>
