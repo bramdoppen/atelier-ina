@@ -42,6 +42,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['gsap'],
     postcss: {
       plugins: {
         'postcss-preset-env': {stage: 0},

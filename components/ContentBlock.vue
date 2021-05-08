@@ -1,15 +1,22 @@
 <template>
-  <article class="grid" :class="{ reversed: reversed }">
-    <picture>
+  <article ref="container" class="grid" :class="{ reversed: reversed }">
+    <picture ref="picture">
       <slot name="image" />
     </picture>
-    <div class="content spacing-sm">
+    <div ref="content" class="content spacing-sm">
       <slot name="content" />
     </div>
   </article>
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+if (process.client) {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
 export default {
   props: {
     reversed: {
@@ -17,6 +24,31 @@ export default {
       required: false,
       default: false
     }
+  },
+  methods: {
+    fadeIn() {
+      gsap.fromTo(
+        [this.$refs.picture, this.$refs.content],
+        {
+          opacity: 0,
+          y: 20
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: "circ.out",
+          delay: 0.2,
+          scrollTrigger: {
+            trigger: this.$refs.container,
+            once: true
+          }
+        }
+      );
+    }
+  },
+  mounted() {
+    this.fadeIn();
   }
 };
 </script>
@@ -28,6 +60,10 @@ export default {
   grid-auto-flow: row dense;
   gap: var(--container-spacing);
   align-items: center;
+
+  & > * {
+    opacity: 0;
+  }
 
   @media (--max48) {
     gap: calc(var(--container-spacing) / 2);

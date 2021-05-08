@@ -24,8 +24,8 @@ export default {
       const headerText = this.$refs.grid.querySelector("h1");
       gsap.fromTo(
         headerText,
-        { y: "100%", opacity: 0 },
-        { y: "0%", opacity: 1, duration: 1, ease: "circ.inOut" }
+        { x: 20, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.4, ease: "circ.out" }
       );
     }
   },
