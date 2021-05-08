@@ -59,8 +59,8 @@
 
 <script>
 export default {
-  head() {
-    // Set Meta Tags for this Page
+  head: {
+    title: "Jouw kleding op maat - Kleding op maat - Ina Lubbers Lensink"
   }
 };
 </script>

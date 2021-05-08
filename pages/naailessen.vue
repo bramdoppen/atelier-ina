@@ -26,8 +26,8 @@
 
 <script>
 export default {
-  head() {
-    // Set Meta Tags for this Page
+  head: {
+    title: "Naailessen - Kleding op maat - Ina Lubbers Lensink"
   }
 };
 </script>

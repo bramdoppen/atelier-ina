@@ -21,8 +21,8 @@
 
 <script>
 export default {
-  head() {
-    // Set Meta Tags for this Page
+  head: {
+    title: "Workshops en groepslessen - Kleding op maat - Ina Lubbers Lensink"
   }
 };
 </script>

@@ -28,8 +28,8 @@
 
 <script>
 export default {
-  head() {
-    // Set Meta Tags for this Page
+  head: {
+    title: "Contact opnemen met Ina - Kleding op maat - Ina Lubbers Lensink"
   }
 };
 </script>
