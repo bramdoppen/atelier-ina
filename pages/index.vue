@@ -39,7 +39,7 @@
           </Button>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
+          <img src="~assets/images/compressed/pexels_evelina_zhu_5_DW90k.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>
@@ -55,7 +55,7 @@
           </Button>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
+          <img src="~assets/images/compressed/pexels_cottonbro_462_SCtgN.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>
@@ -71,7 +71,7 @@
           </Button>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
+          <img src="~assets/images/compressed/pexels_ksenia_cherna_75XV8.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>

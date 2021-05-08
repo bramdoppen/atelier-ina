@@ -16,7 +16,7 @@
           </Button>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg">
+          <img src="~assets/images/compressed/pexels_ksenia_cherna_75XV8.jpg">
         </template>
       </ContentBlock>
     </ContentHolder>
@@ -26,6 +26,6 @@
 <script>
 export default {
   props: ['error'],
-  layout: 'error' // you can set a custom layout for the error page
-}
+  layout: 'error'
+};
 </script>

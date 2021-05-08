@@ -19,7 +19,7 @@
           </p>
         </template>
         <template #image>
-          <img src="~assets/images/pexels-ksenia-chernaya-3965557.jpg" />
+          <img src="~assets/images/compressed/pexels_cottonbro_461_b5aqV.jpg" />
         </template>
       </ContentBlock>
     </ContentHolder>
