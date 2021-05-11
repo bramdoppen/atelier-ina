@@ -5,6 +5,11 @@
         <slot></slot>
       </div>
     </div>
+    <img src="~assets/images/style-element/one.svg" class="style-element one" />
+    <img
+      src="~assets/images/style-element/two.svg"
+      class="style-element two right"
+    />
   </header>
 </template>
 
@@ -42,6 +47,7 @@ export default {
   width: 100%;
   padding-top: var(--space);
   padding-bottom: var(--space);
+  position: relative;
 
   @media (--max48) {
     --space: var(--container-spacing);
@@ -81,5 +87,54 @@ h1 {
 
 span.tint {
   color: var(--lightblue);
+}
+
+.style-element {
+  position: absolute;
+  left: auto;
+  top: 250px;
+  right: 60%;
+
+  @media (--max48) {
+    top: 160px;
+    right: 80%;
+  }
+
+  &.one {
+    height: 1340px;
+    width: 750px;
+    transform: rotate(30deg);
+    transform-origin: top left;
+
+    @media (--max48) {
+      height: calc(1340px / 4);
+      width: calc(750px / 4);
+      top: 0;
+      right: -77px;
+      transform: rotate(-25deg);
+      transform-origin: top right;
+    }
+  }
+
+  &.two {
+    height: 500px;
+    width: 500px;
+
+    @media (--max48) {
+      height: 290px;
+      width: 200px;
+    }
+  }
+
+  &.right {
+    top: 620px;
+    right: 0;
+
+    @media (--max48) {
+      top: 120px;
+      left: 0;
+      right: auto;
+    }
+  }
 }
 </style>

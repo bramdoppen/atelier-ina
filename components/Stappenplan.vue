@@ -18,7 +18,7 @@ export default {
   methods: {
     fadeIn() {
       gsap.fromTo(
-        this.$refs.content,
+        [this.$refs.container, this.$refs.content],
         {
           opacity: 0,
           y: 20
@@ -49,6 +49,9 @@ export default {
   color: #265498;
   padding: var(--container-spacing);
   border-radius: 10px;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
 
   @media (--max48) {
     padding: 30px;

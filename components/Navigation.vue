@@ -79,7 +79,7 @@ export default {
 .header-container {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
 
   @media (min-width: 48em) {
     margin-top: 60px;

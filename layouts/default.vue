@@ -61,6 +61,12 @@ html {
   }
 }
 
+main {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: var(--container-spacing);
+}
+
 *,
 *::before,
 *::after {

@@ -15,7 +15,7 @@
         </p>
         <p>
           Al tijdens haar jeugd altijd in de weer met lapjes, stoffen en garens
-          is haar hobby uitgegroeid tot een echte Modevakschool, sinds 1998. Met
+          is haar hobby uitgegroeid tot een echte Modevakschool, sinds 1996. Met
           veel enthousiasme en kennis van zaken maakt Ina van ieder lapje stof
           iets moois.
         </p>

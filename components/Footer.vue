@@ -15,7 +15,6 @@ export default {};
 <style scoped>
 .footer {
   background: #f5f5f5;
-  margin-top: var(--container-spacing);
   padding: 40px 0;
 }
 
