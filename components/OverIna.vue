@@ -4,10 +4,10 @@
       <slot />
     </div>
     <div class="image-portrait image-holder">
-      <img src="~assets/images/compressed/afpassen.JPG" />
+      <img src="~assets/images/compressed/afpassen.jpg" />
     </div>
     <div class="image-landscape image-holder">
-      <img src="~assets/images/compressed/rits.JPG" />
+      <img src="~assets/images/compressed/rits.jpg" />
     </div>
   </article>
 </template>
