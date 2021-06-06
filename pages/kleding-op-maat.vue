@@ -54,6 +54,27 @@
         </template>
       </Stappenplan>
     </ContentHolder>
+    <ContentHolder>
+      <PhotoGallery
+        title="Impressie"
+        sub="Een impressie van op maat gemaakte kleding. Klik op de afbeelding om te vergroten."
+        :items="galleryItems"
+      />
+    </ContentHolder>
+    <ContentHolder>
+      <ContentBlock>
+        <template #content>
+          <h2>Neem contact op</h2>
+          <p>
+            Wil je meer informatie over kleding op maat? Neem dan contact op met
+            Ina, dan bespreken wij de mogelijkheden.
+          </p>
+          <Button link="/contact">
+            Neem contact op
+          </Button>
+        </template>
+      </ContentBlock>
+    </ContentHolder>
   </div>
 </template>
 
@@ -61,6 +82,51 @@
 export default {
   head: {
     title: "Jouw kleding op maat - Kleding op maat - Ina Lubbers Lensink"
+  },
+  data: () => {
+    return {
+      galleryItems: [
+        {
+          src: require("~/assets/images/compressed/afpassen.jpg"),
+          thumbnail: require("~/assets/images/compressed/afpassen.jpg"),
+          w: 900,
+          h: 1200,
+          title: "Voorbeeld van het afpassen van een kledingstuk"
+        },
+        {
+          src: require("~/assets/images/compressed/2017_04_08_shoot_bma_r0Nlt.jpg"),
+          thumbnail: require("~/assets/images/compressed/2017_04_08_shoot_bma_r0Nlt.jpg"),
+          w: 1068,
+          h: 1600
+        },
+        {
+          src: require("~/assets/images/compressed/foto_eva.jpg"),
+          thumbnail: require("~/assets/images/compressed/foto_eva.jpg"),
+          w: 1200,
+          h: 1798
+        },
+        {
+          src: require("~/assets/images/compressed/detail_rode_jas.jpg"),
+          thumbnail: require("~/assets/images/compressed/detail_rode_jas.jpg"),
+          w: 798,
+          h: 1200
+        },
+        {
+          src: require("~/assets/images/compressed/colbert_borstzak.jpg"),
+          thumbnail: require("~/assets/images/compressed/colbert_borstzak.jpg"),
+          w: 900,
+          h: 1200,
+          title: "Borstzak van een colbert"
+        },
+        {
+          src: require("~/assets/images/compressed/rolstoelcape.jpg"),
+          thumbnail: require("~/assets/images/compressed/rolstoelcape.jpg"),
+          w: 900,
+          h: 1200,
+          title: "Een rolstoelcape"
+        }
+      ]
+    };
   }
 };
 </script>

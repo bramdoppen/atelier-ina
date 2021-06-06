@@ -10,12 +10,12 @@
             Heb je nog niet gevonden wat je zocht, of wil je meer informatie over naailessen, workshops of kleding op maat? Neem dan gerust contact met mij op.
           </p>
           <p>
-            Ina Lubbers-Lensink - Kleding op Maat<br>
+            <strong>Ina Lubbers-Lensink - Kleding op Maat</strong><br>
             <br>
             Zilverbekendijk 4<br>
             7122 PX Aalten<br>
             <br>
-            0544-377162
+            0544-377162<br>
           </p>
         </template>
         <template #image>

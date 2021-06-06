@@ -17,7 +17,8 @@
   --font-sans: "Open Sans", ui-sans-serif, sans-serif;
   --font-serif: "DM Serif Display", sans-serif;
   --darkblue: #3921b1;
-  --lightblue: #accbfa;
+  --lightblue: #d5e5fd;
+  --blue: #accbfa;
   --orange: #ee6538;
   --pink: #f8aaee;
   --container-spacing: 80px;

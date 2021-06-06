@@ -1,9 +1,13 @@
 <template>
   <article ref="container" class="grid" :class="{ reversed: reversed }">
-    <picture ref="picture">
+    <picture ref="picture" v-if="hasImageSlot">
       <slot name="image" />
     </picture>
-    <div ref="content" class="content spacing-sm">
+    <div
+      ref="content"
+      class="content spacing-sm"
+      :class="{ 'set-max': !hasImageSlot }"
+    >
       <slot name="content" />
     </div>
   </article>
@@ -27,8 +31,12 @@ export default {
   },
   methods: {
     fadeIn() {
+      const triggers = [this.$refs.content];
+      if (this.$refs.picture) {
+        triggers.push(this.$refs.picture);
+      }
       gsap.fromTo(
-        [this.$refs.picture, this.$refs.content],
+        triggers,
         {
           opacity: 0,
           y: 20
@@ -49,6 +57,11 @@ export default {
   },
   mounted() {
     this.fadeIn();
+  },
+  computed: {
+    hasImageSlot() {
+      return !!this.$slots.image;
+    }
   }
 };
 </script>
@@ -97,5 +110,11 @@ picture > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.content.set-max {
+  @media (--min48) {
+    max-width: 50%;
+  }
 }
 </style>

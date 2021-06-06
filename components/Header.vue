@@ -86,7 +86,7 @@ h1 {
 }
 
 span.tint {
-  color: var(--lightblue);
+  color: var(--blue);
 }
 
 .style-element {
