@@ -52,7 +52,11 @@ typings/
 
 # Output of 'npm pack'
 *.tgz
-!gsap-bonus.tgz
+
+# Nuxt
+.output
+.data
+.parity
 
 # Yarn Integrity file
 .yarn-integrity

@@ -1,0 +1,22 @@
+title: Workshops
+slug: /workshops
+seo:
+  title: Workshops en gastlessen - Kleding op maat - Ina Lubbers Lensink
+  description: Inspirerende naaiworkshops en gastlessen in Aalten of op locatie. Ina Lubbers stelt samen met jou een passend programma samen.
+sections:
+  - type: pageHeader
+    heading: Workshops
+    small: true
+  - type: contentBlock
+    reversed: true
+    image: /images/pexels_ksenia_cherna_75XV8.jpg
+    imageAlt: Kleurrijke stoffen voor een workshop
+    body: |
+      Zoek je een inspirerende workshop of een gastles? Dan ben je bij Ina aan het juiste adres. Uiteraard zijn er veel mogelijkheden. Samen komen we tot een passend programma.
+
+      Dat kan in het atelier in Aalten, of als gastles op locatie bij een vereniging, school of groepsuitje in de Achterhoek. Van een eerste kennismaking met de naaimachine tot een middag gericht op een specifiek techniek of kledingstuk.
+  - type: faq
+    heading: Veelgestelde vragen over workshops
+    items:
+      - workshops-op-locatie
+      - waar-zit-het-atelier

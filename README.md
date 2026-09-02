@@ -1,20 +1,18 @@
-# atelier-ina
+# Atelier Ina
 
-## Build Setup
+Website for Ina Lubbers — kleding op maat, naailessen and workshops in Aalten.
+
+Content lives in `content/` as structured YAML so it can later move to Sanity without rewriting the UI.
+
+## Setup
+
+Requires Node 22 (see `.nvmrc`).
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+npm install
+npm run dev
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+```bash
+npm run generate
+```
