@@ -1,8 +1,8 @@
 title: Naailessen
 slug: /naailessen
 seo:
-  title: Naailessen in Aalten - Kleding op maat - Ina Lubbers Lensink
-  description: Wekelijkse naailessen in Aalten voor beginners en gevorderden. Kleine groepen van maximaal vijf personen, op de grens van Lichtenvoorde en Aalten.
+  title: Naailessen - Kleding op maat - Ina Lubbers Lensink
+  description: Wekelijkse naailessen, workshops of op zoek naar kleding op maat? Met veel enthousiasme en kennis van zaken maakt Ina Lubbers van ieder lapje stof iets moois.
 sections:
   - type: pageHeader
     heading: Naailessen
@@ -12,11 +12,13 @@ sections:
     image: /images/pexels_cottonbro_373_Equin.jpg
     imageAlt: Naailes in het atelier
     body: |
-      De lessen zijn voor beginners en gevorderden en duren twee uur. Iedereen werkt op zijn eigen niveau en tempo en de groepen bestaan uit maximaal vijf personen.
-
-      Naaimachines, lockmachine en strijkapparatuur zijn aanwezig, maar de cursisten mogen natuurlijk ook hun eigen naaimachine meenemen. De lessen worden gegeven op maandagmiddag, dinsdagmorgen, dinsdagavond, woensdagavond en donderdagavond.
-
-      Het atelier ligt in Aalten, op de grens met Lichtenvoorde. Cursisten komen uit de hele Achterhoek: Winterswijk, Bredevoort, Doetinchem en omliggende dorpen.
+      De lessen zijn voor beginners en gevorderden en duren twee uur.
+      Iedereen werkt op zijn eigen niveau en tempo en de groepen bestaan
+      uit maximaal vijf personen. Naaimachines, lockmachine en
+      strijkapparatuur zijn aanwezig, maar de cursisten mogen natuurlijk
+      ook hun eigen naaimachine meenemen. De lessen worden gegeven op
+      maandagmiddag, dinsdagmorgen, dinsdagavond, woensdagavond en
+      donderdagavond.
   - type: faq
     heading: Veelgestelde vragen over naailessen
     items:

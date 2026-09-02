@@ -2,7 +2,7 @@ title: Contact
 slug: /contact
 seo:
   title: Contact opnemen met Ina - Kleding op maat - Ina Lubbers Lensink
-  description: Neem contact op met Ina Lubbers-Lensink in Aalten voor naailessen, workshops of kleding op maat. Zilverbekendijk 4, 7122 PX Aalten.
+  description: Wekelijkse naailessen, workshops of op zoek naar kleding op maat? Met veel enthousiasme en kennis van zaken maakt Ina Lubbers van ieder lapje stof iets moois.
 sections:
   - type: pageHeader
     heading: Contact
@@ -17,5 +17,4 @@ sections:
     items:
       - waar-zit-het-atelier
       - wanneer-lessen
-      - kosten
-      - workshops-op-locatie
+      - workshops-gastlessen
