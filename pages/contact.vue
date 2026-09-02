@@ -15,7 +15,7 @@
             Zilverbekendijk 4<br>
             7122 PX Aalten<br>
             <br>
-            0544-377162<br>
+            <a href="tel:+31544377162">0544-377162</a><br>
           </p>
         </template>
         <template #image>
