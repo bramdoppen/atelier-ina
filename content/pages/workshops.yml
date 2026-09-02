@@ -1,0 +1,21 @@
+title: Workshops
+slug: /workshops
+seo:
+  title: Workshops en groepslessen - Kleding op maat - Ina Lubbers Lensink
+  description: Wekelijkse naailessen, workshops of op zoek naar kleding op maat? Met veel enthousiasme en kennis van zaken maakt Ina Lubbers van ieder lapje stof iets moois.
+sections:
+  - type: pageHeader
+    heading: Workshops
+    small: true
+  - type: contentBlock
+    reversed: true
+    image: /images/pexels_ksenia_cherna_75XV8.jpg
+    imageAlt: Kleurrijke stoffen voor een workshop
+    body: |
+      Zoek je een inspirerende workshop of een gastles? Dan ben je bij Ina aan het juiste adres.
+      Uiteraard zijn er veel mogelijkheden. Samen komen we tot een passend programma.
+  - type: faq
+    heading: Veelgestelde vragen over workshops
+    items:
+      - workshops-gastlessen
+      - waar-zit-het-atelier

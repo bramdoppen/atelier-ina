@@ -1,0 +1,50 @@
+title: Home
+slug: /
+seo:
+  title: Kleding op maat - Ina Lubbers Lensink
+  description: Wekelijkse naailessen, workshops of op zoek naar kleding op maat? Met veel enthousiasme en kennis van zaken maakt Ina Lubbers van ieder lapje stof iets moois.
+sections:
+  - type: pageHeader
+    heading: "Naailes, workshops en kleding op maat:"
+    tint: Ina Lubbers
+  - type: aboutBlock
+    heading: Over Ina Lubbers
+    portrait: /images/afpassen.jpg
+    portraitAlt: Ina Lubbers past een kledingstuk af
+    landscape: /images/rits.jpg
+    landscapeAlt: Detail van een rits
+    body: |
+      In het Achterhoekse Aalten geeft Ina Lubbers al jaren naailessen aan mensen die graag zelf kleding willen maken.
+
+      Al tijdens haar jeugd altijd in de weer met lapjes, stoffen en garens is haar hobby uitgegroeid tot een echte Modevakschool, sinds 1996. Met veel enthousiasme en kennis van zaken maakt Ina van ieder lapje stof iets moois.
+
+      Door middel van verschillende cursussen en bijscholingen breidt ze haar kennis steeds verder uit.
+  - type: contentBlock
+    heading: Wekelijkse naailessen
+    reversed: true
+    image: /images/pexels_evelina_zhu_5_DW90k.jpg
+    imageAlt: Stoffen en naaiwerk in het atelier
+    cta:
+      label: Meer informatie
+      link: /naailessen/
+    body: |
+      Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde en Aalten in.
+  - type: contentBlock
+    heading: Kleding op maat
+    image: /images/pexels_cottonbro_462_SCtgN.jpg
+    imageAlt: Naaimachine in het atelier
+    cta:
+      label: Meer informatie
+      link: /kleding-op-maat/
+    body: |
+      Een uniek kledingstuk voor een feestelijke gelegenheid, of omdat het lastig is om kleding te vinden in jouw eigen maat? Ik maak graag een passend kledingstuk voor jou!
+  - type: contentBlock
+    heading: Workshops
+    reversed: true
+    image: /images/pexels_ksenia_cherna_75XV8.jpg
+    imageAlt: Kleurrijke stoffen
+    cta:
+      label: Meer informatie
+      link: /workshops/
+    body: |
+      Zoek je een inspirerende workshop of een gastles? Dan ben je bij Ina aan het juiste adres.

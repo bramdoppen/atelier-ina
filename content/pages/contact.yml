@@ -1,0 +1,20 @@
+title: Contact
+slug: /contact
+seo:
+  title: Contact opnemen met Ina - Kleding op maat - Ina Lubbers Lensink
+  description: Wekelijkse naailessen, workshops of op zoek naar kleding op maat? Met veel enthousiasme en kennis van zaken maakt Ina Lubbers van ieder lapje stof iets moois.
+sections:
+  - type: pageHeader
+    heading: Contact
+    small: true
+  - type: contactDetails
+    image: /images/pexels_cottonbro_461_b5aqV.jpg
+    imageAlt: Atelier van Ina Lubbers
+    intro: |
+      Heb je nog niet gevonden wat je zocht, of wil je meer informatie over naailessen, workshops of kleding op maat? Neem dan gerust contact met mij op.
+  - type: faq
+    heading: Veelgestelde vragen
+    items:
+      - waar-zit-het-atelier
+      - wanneer-lessen
+      - workshops-gastlessen

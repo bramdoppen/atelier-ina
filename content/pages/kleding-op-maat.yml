@@ -1,0 +1,67 @@
+title: Kleding op maat
+slug: /kleding-op-maat
+seo:
+  title: Jouw kleding op maat - Kleding op maat - Ina Lubbers Lensink
+  description: Wekelijkse naailessen, workshops of op zoek naar kleding op maat? Met veel enthousiasme en kennis van zaken maakt Ina Lubbers van ieder lapje stof iets moois.
+sections:
+  - type: pageHeader
+    heading: Kleding op maat
+    small: true
+  - type: contentBlock
+    reversed: true
+    image: /images/bijgesneden_ina.jpg
+    imageAlt: Ina Lubbers in het atelier
+    body: |
+      Ik maak graag een uniek kledingstuk voor je, voor elke gelegenheid, op jouw eigen maten. Dit kan voor een feestelijke gelegenheid zijn, of een uniek item om dagelijks te dragen.
+
+      Omdat het kledingstuk precies gemaakt is op jouw maat, is dit ook een uitkomst voor klanten voor wie het lastig is om kleding te vinden in hun eigen maat.
+  - type: steps
+    heading: Hoe gaat dit in zijn werk?
+    intro: Voor het maken van de kleding plannen we meestal drie afspraken in.
+    steps:
+      - Tijdens de eerste afspraak wordt het gewenste ontwerp en de materiaalkeuze besproken. Ook worden de maten opgenomen. Aan de hand hiervan wordt een patroon gemaakt. Met dit patroon maak ik de toile, het proefmodel.
+      - Tijdens de tweede afspraak wordt dit proefmodel gepast en eventueel nog aangepast.
+      - Tijdens de derde (pas-)afspraak is het model al in de gewenste stof gemaakt en kunnen er nog kleine veranderingen aangebracht worden.
+    outro: Wanneer alles naar tevredenheid is en het kledingstuk goed zit, wordt het kledingstuk afgemaakt.
+  - type: gallery
+    title: Impressie
+    sub: Een impressie van op maat gemaakte kleding. Klik op de afbeelding om te vergroten.
+    images:
+      - src: /images/afpassen.jpg
+        w: 900
+        h: 1200
+        title: Voorbeeld van het afpassen van een kledingstuk
+        alt: Afpassen van een kledingstuk
+      - src: /images/2017_04_08_shoot_bma_r0Nlt.jpg
+        w: 1068
+        h: 1600
+        alt: Op maat gemaakt kledingstuk
+      - src: /images/foto_eva.jpg
+        w: 1200
+        h: 1798
+        alt: Kleding op maat gedragen
+      - src: /images/detail_rode_jas.jpg
+        w: 798
+        h: 1200
+        alt: Detail van een rode jas
+      - src: /images/colbert_borstzak.jpg
+        w: 900
+        h: 1200
+        title: Borstzak van een colbert
+        alt: Borstzak van een colbert
+      - src: /images/rolstoelcape.jpg
+        w: 900
+        h: 1200
+        title: Een rolstoelcape
+        alt: Een rolstoelcape
+  - type: contentBlock
+    heading: Neem contact op
+    cta:
+      label: Neem contact op
+      link: /contact/
+    body: |
+      Wil je meer informatie over kleding op maat? Neem dan contact op met Ina, dan bespreken wij de mogelijkheden.
+  - type: faq
+    heading: Veelgestelde vragen over kleding op maat
+    items:
+      - hoe-passen
