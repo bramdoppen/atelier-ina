@@ -7,6 +7,9 @@ postalCode: 7122 PX
 city: Aalten
 region: Gelderland
 country: NL
+latitude: 51.96572
+longitude: 6.5552
+image: /images/bijgesneden_ina.jpg
 serviceArea:
   - Aalten
   - Lichtenvoorde

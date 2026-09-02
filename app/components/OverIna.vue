@@ -5,7 +5,7 @@
       <MarkdownBody :value="body" />
     </div>
     <div class="image-portrait image-holder">
-      <SiteImage :src="portrait" :alt="portraitAlt" />
+      <SiteImage :src="portrait" :alt="portraitAlt" priority />
     </div>
     <div class="image-landscape image-holder">
       <SiteImage :src="landscape" :alt="landscapeAlt" />

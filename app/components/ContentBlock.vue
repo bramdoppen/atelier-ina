@@ -88,10 +88,6 @@ onMounted(() => {
   gap: var(--container-spacing);
   align-items: center;
 
-  & > * {
-    opacity: 0;
-  }
-
   @media (--max48) {
     gap: calc(var(--container-spacing) / 2);
   }

@@ -69,6 +69,7 @@ const galleryItems = (images = []) =>
     thumbnail: image.src,
     w: image.w,
     h: image.h,
-    title: image.title || image.alt || ''
+    title: image.title || image.alt || '',
+    alt: image.alt || image.title || ''
   }))
 </script>

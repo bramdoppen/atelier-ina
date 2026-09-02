@@ -58,7 +58,7 @@ sections:
     heading: Neem contact op
     cta:
       label: Neem contact op
-      link: /contact
+      link: /contact/
     body: |
       Wil je meer informatie over kleding op maat? Neem dan contact op met Ina, dan bespreken wij de mogelijkheden.
   - type: faq

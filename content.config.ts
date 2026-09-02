@@ -80,6 +80,9 @@ export default defineContentConfig({
         city: z.string(),
         region: z.string(),
         country: z.string(),
+        latitude: z.number().optional(),
+        longitude: z.number().optional(),
+        image: z.string().optional(),
         serviceArea: z.array(z.string()),
         seoDescription: z.string()
       })

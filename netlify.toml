@@ -4,3 +4,27 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/naailessen"
+  to = "/naailessen/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/kleding-op-maat"
+  to = "/kleding-op-maat/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/workshops"
+  to = "/workshops/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/"
+  status = 301
+  force = false

@@ -2,7 +2,7 @@
   <section v-if="resolved.length" class="faq spacing-sm">
     <h2>{{ heading }}</h2>
     <div class="faq-list">
-      <details v-for="item in resolved" :key="item.id" class="faq-item">
+      <details v-for="item in resolved" :key="item.key" class="faq-item">
         <summary>{{ item.question }}</summary>
         <MarkdownBody :value="item.answer" />
       </details>

@@ -80,10 +80,6 @@ onMounted(() => {
   }
 }
 
-.grid > * {
-  opacity: 0;
-}
-
 h1 {
   color: var(--darkblue);
 

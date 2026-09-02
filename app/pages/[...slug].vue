@@ -6,7 +6,12 @@
 
 <script setup>
 const route = useRoute()
-const slug = computed(() => (route.path === '/' ? '/' : route.path))
+const site = useSiteConfig()
+const slug = computed(() => {
+  const path = route.path
+  if (path === '/') return '/'
+  return path.replace(/\/+$/, '')
+})
 
 const { data: page } = await useAsyncData(
   () => `page-${slug.value}`,
@@ -37,13 +42,23 @@ useSeoMeta({
   title: seoTitle,
   description: seoDescription,
   ogTitle: seoTitle,
-  ogDescription: seoDescription
+  ogDescription: seoDescription,
+  ogLocale: 'nl_NL'
 })
 
 defineOgImageComponent('Ina', {
   title: seoTitle,
   description: seoDescription
 })
+
+const origin = computed(() => String(site.url || '').replace(/\/$/, ''))
+
+const absoluteUrl = (path) => {
+  const base = origin.value
+  if (!path || path === '/') return `${base}/`
+  const normalized = path.startsWith('/') ? path : `/${path}`
+  return `${base}${normalized.endsWith('/') ? normalized : `${normalized}/`}`
+}
 
 const faqIds = computed(() =>
   (page.value?.sections || [])
@@ -62,10 +77,10 @@ useSchemaOrg(() => {
   const nodes = []
   const s = settings.value
   if (s) {
-    nodes.push({
+    const business = {
       '@type': ['LocalBusiness', 'ProfessionalService'],
       name: s.businessName,
-      url: 'https://www.kledingopmaat-inalubbers.nl',
+      url: `${origin.value}/`,
       telephone: s.phoneTel,
       address: {
         '@type': 'PostalAddress',
@@ -75,7 +90,43 @@ useSchemaOrg(() => {
         addressRegion: s.region,
         addressCountry: s.country
       },
-      areaServed: s.serviceArea
+      areaServed: s.serviceArea,
+      hasMap: mapsUrl(s)
+    }
+    if (s.image) {
+      const imageUrl = `${origin.value}${s.image}`
+      business.image = imageUrl
+      business.logo = imageUrl
+    }
+    if (s.latitude != null && s.longitude != null) {
+      business.geo = {
+        '@type': 'GeoCoordinates',
+        latitude: s.latitude,
+        longitude: s.longitude
+      }
+    }
+    nodes.push(business)
+  }
+  if (page.value) {
+    const crumbs = [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${origin.value}/`
+      }
+    ]
+    if (slug.value !== '/') {
+      crumbs.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: page.value.title,
+        item: absoluteUrl(slug.value)
+      })
+    }
+    nodes.push({
+      '@type': 'BreadcrumbList',
+      itemListElement: crumbs
     })
   }
   if (pageFaqs.value.length) {

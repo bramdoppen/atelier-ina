@@ -1,10 +1,10 @@
 logoLabel: Kleding op maat - Ina Lubbers
 items:
   - label: Naailessen
-    to: /naailessen
+    to: /naailessen/
   - label: Kleding op maat
-    to: /kleding-op-maat
+    to: /kleding-op-maat/
   - label: Workshops
-    to: /workshops
+    to: /workshops/
   - label: Contact
-    to: /contact
+    to: /contact/

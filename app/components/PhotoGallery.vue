@@ -14,7 +14,12 @@
             target="_blank"
             rel="noreferrer"
           >
-            <img :src="item.thumbnail" :alt="item.title || ''" />
+            <img
+              :src="item.thumbnail"
+              :alt="item.alt || item.title || ''"
+              loading="lazy"
+              decoding="async"
+            />
           </a>
         </figure>
       </div>

@@ -29,12 +29,12 @@ const { data: settings } = await useAsyncData('settings', () =>
 const body = computed(() => {
   const s = settings.value
   if (!s) return props.intro
+  const address = `${s.street}, ${s.postalCode} ${s.city}`
   return `${props.intro}
 
 **${s.businessName}**
 
-${s.street}
-${s.postalCode} ${s.city}
+[${address}](${mapsUrl(s)})
 
 [${s.phoneDisplay}](tel:${s.phoneTel})`
 })

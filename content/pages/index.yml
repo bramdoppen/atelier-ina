@@ -26,7 +26,7 @@ sections:
     imageAlt: Stoffen en naaiwerk in het atelier
     cta:
       label: Meer informatie
-      link: /naailessen
+      link: /naailessen/
     body: |
       Met veel energie geeft Ina Lubbers elke week les in het Achterhoekse Aalten. Haar atelier staat precies op de grens tussen Lichtenvoorde en Aalten in.
   - type: contentBlock
@@ -35,7 +35,7 @@ sections:
     imageAlt: Naaimachine in het atelier
     cta:
       label: Meer informatie
-      link: /kleding-op-maat
+      link: /kleding-op-maat/
     body: |
       Een uniek kledingstuk voor een feestelijke gelegenheid, of omdat het lastig is om kleding te vinden in jouw eigen maat? Ik maak graag een passend kledingstuk voor jou!
   - type: contentBlock
@@ -45,6 +45,6 @@ sections:
     imageAlt: Kleurrijke stoffen
     cta:
       label: Meer informatie
-      link: /workshops
+      link: /workshops/
     body: |
       Zoek je een inspirerende workshop of een gastles? Dan ben je bij Ina aan het juiste adres.

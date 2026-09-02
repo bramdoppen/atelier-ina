@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     name: 'Kleding op maat - Ina Lubbers Lensink',
     description:
       'Wekelijkse naailessen, workshops of op zoek naar kleding op maat? Met veel enthousiasme en kennis van zaken maakt Ina Lubbers van ieder lapje stof iets moois.',
-    defaultLocale: 'nl'
+    defaultLocale: 'nl',
+    trailingSlash: true
   },
   seo: {
     titleTemplate: '%s'
@@ -24,7 +25,11 @@ export default defineNuxtConfig({
       },
       titleTemplate: '%s',
       title: 'Kleding op maat - Ina Lubbers Lensink',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/site.webmanifest' }
+      ]
     }
   },
   postcss: {

@@ -69,16 +69,11 @@ onMounted(() => {
   color: #265498;
   padding: var(--container-spacing);
   border-radius: 10px;
-  opacity: 0;
   position: relative;
   z-index: 1;
 
   @media (--max48) {
     padding: 30px;
-  }
-
-  & > * {
-    opacity: 0;
   }
 }
 
